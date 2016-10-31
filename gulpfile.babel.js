@@ -33,7 +33,7 @@ import swPrecache from 'sw-precache';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import {output as pagespeed} from 'psi';
 import pkg from './package.json';
-
+import nodemon from 'nodemon';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
@@ -153,8 +153,21 @@ gulp.task('html', () => {
 // Clean output directory
 gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
+gulp.task('nodemon', function(cb) {
+  return nodemon({
+    script: 'app/server.js',
+    ignore: [
+      './bower_components/**',
+      './node_modules/**',
+      './build/**'
+    ]
+  }).on('start', function() {
+    cb();
+  });
+});
+
 // Watch files for changes & reload
-gulp.task('serve', ['scripts', 'styles'], () => {
+gulp.task('serve', ['scripts', 'styles', 'nodemon'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
