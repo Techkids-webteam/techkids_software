@@ -263,7 +263,7 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   position: relative
 }
 
-.btn-black, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+.btn-black, .btn-white-round, .btn-white-square, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
   font-family: robotolight;
   display: inline-block;
   text-transform: uppercase;
@@ -273,34 +273,35 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   padding: .5rem 2.5rem
 }
 
-.button-blue, .button-blue-border{
-    font-family: robotobold;
+.button-blue, .button-blue-border {
+  font-family: robotobold;
 }
+
 @media only screen and (min-width:768px) {
-  .btn-black, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1rem
   }
 }
 
 @media only screen and (min-width:992px) {
-  .btn-black, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.1rem
   }
 }
 
 @media only screen and (min-width:1200px) {
-  .btn-black, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.2rem
   }
 }
 
 @media only screen and (min-width:1900px) {
-  .btn-black, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.2rem
   }
 }
 
-.btn-black:focus, .btn-black:hover, .btn-black:visited, .btn-white-round:focus, .btn-white-round:hover, .btn-white-round:visited, .button-blue-border:focus, .button-blue-border:hover, .button-blue-border:visited, .button-blue:focus, .button-blue:hover, .button-blue:visited, .home-column-left .home-video-container:hover .button-blue-border:focus, .home-column-left .home-video-container:hover .button-blue-border:hover, .home-column-left .home-video-container:hover .button-blue-border:visited {
+.btn-black:focus, .btn-black:hover, .btn-black:visited, .btn-white-square:focus, .btn-white-square:hover, .btn-white-square:visited, .btn-white-round:focus, .btn-white-round:hover, .btn-white-round:visited, .button-blue-border:focus, .button-blue-border:hover, .button-blue-border:visited, .button-blue:focus, .button-blue:hover, .button-blue:visited, .home-column-left .home-video-container:hover .button-blue-border:focus, .home-column-left .home-video-container:hover .button-blue-border:hover, .home-column-left .home-video-container:hover .button-blue-border:visited {
   text-decoration: none
 }
 
@@ -328,6 +329,28 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   background: #6dcff6;
   border: 2px solid #facd20;
   color: #282828
+}
+
+
+.btn-white-square {
+    font-family: robotoregular;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 25px;
+    border: 3px solid #fff;
+    /*padding: 1.3rem 2rem;*/
+    outline: 0 none;
+    width: 19%;
+    height: 110px;
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.btn-white-square:hover {
+  color: #1d2e42;
+  background: #fe8e22;
+  border: 3px solid transparent;
 }
 
 .niteco-fat-button {
@@ -1899,8 +1922,8 @@ div.ppt {
 }
 
 .top-navigator-container .top-navigator__menu-container ul li a:hover {
-    background-color: #00aeef;
-    color: #ffffff;
+  background-color: #00aeef;
+  color: #ffffff;
 }
 
 @media only screen and (min-width:1900px) {
@@ -1995,21 +2018,22 @@ div.ppt {
 
 @media only screen and (min-width:768px) {
   .page-introduction-container .page-introduction-top-block__content {
-    top: 37%
+    top: 45%
   }
 }
 
 .page-introduction-container .page-introduction-top-block__content h1 {
+  font-family: myriadpro;
   font-size: 3rem;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: #fe8e22;
   font-weight: 500
 }
 
 @media only screen and (min-width:768px) {
   .page-introduction-container .page-introduction-top-block__content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0
   }
 }
@@ -2019,14 +2043,14 @@ div.ppt {
     top: 35%
   }
   .page-introduction-container .page-introduction-top-block__content h1 {
-    font-size: 5.625rem;
+    font-size: 3.625rem;
     padding: 0
   }
 }
 
 @media only screen and (max-width:639px) and (orientation:landscape) {
   .page-introduction-container .page-introduction-top-block__content h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding: 20px 0 0
   }
 }
@@ -2044,14 +2068,14 @@ div.ppt {
 @media only screen and (min-width:768px) {
   .page-introduction-container .page-introduction-top-block__content__sub-title {
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 40px
   }
 }
 
 @media only screen and (min-width:1200px) {
   .page-introduction-container .page-introduction-top-block__content__sub-title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     line-height: 50px;
     margin-top: 0
   }
@@ -2083,7 +2107,7 @@ div.ppt {
 }
 
 .page-introduction-container .page-introduction-top-block__arrow-down:hover {
-  color: #facd20
+  color: #fe8e22
 }
 
 .page-description__title-container {
@@ -2315,15 +2339,15 @@ a.view-more-jobs {
   width: auto;
   max-width: 300px;
   vertical-align: middle;
-  color: #282828;
+  color: #1d2e42;
   margin-left: auto;
   margin-right: auto;
   float: none!important;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 15px;
   position: relative;
   text-transform: uppercase;
-  background-color: #facd20;
+  background-color: #fe8e22;
   transition: all 200ms ease
 }
 
@@ -2345,7 +2369,7 @@ a.view-more-jobs:active, a.view-more-jobs:focus, a.view-more-jobs:hover {
   outline: 0;
   color: #facd20;
   background-color: rgba(0, 0, 0, .2);
-  border-color: #282828
+  border-color: #1d2e42
 }
 
 a.view-more-jobs.clear, a.view-more-jobs.clear::after {
@@ -2739,15 +2763,19 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 }
 
 .home-block-item__bright-bg {
-  background: #f0f1f3
+  background: url("../images/engagement-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home-block-item__bright-bg .home-block-item__big-text, .home-block-item__bright-bg .home-block-item__small-text {
-  color: #282828
+.home-block-item__bright-bg .home-block-item__big-text {
+  color: #fe8e22
 }
 
 .home-block-item__dark-bg {
-  background: #282828
+  background: url("../images/our-work-hover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-block-item__dark-bg .home-block-item__small-text {
@@ -2755,7 +2783,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 }
 
 .home-block-item__dark-bg .home-block-item__big-text {
-  color: #facd1f
+  color: #fff
 }
 
 .home-block-row {
@@ -2771,22 +2799,25 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
   font-size: 0
 }
 
-.home-block{
-    background-color: #1d2e42;
-    font-family: robotoregular;
-    color: #ffffff;
-    font-style: italic;
-    text-align: center;
-    padding: 4%
+.home-block {
+  background-color: #1d2e42;
+  font-family: robotoregular;
+  color: #ffffff;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  padding: 4%
 }
 
-.footer{
-    background-color: #6dcff6;
-    font-family: robotoregular;
-    color: #1d2e42;
-    text-align: center;
-    padding: 2%
+.footer {
+  background-color: #6dcff6;
+  font-family: robotoregular;
+  color: #1d2e42;
+  width: 100%;
+  text-align: center;
+  padding: 2%
 }
+
 @media only screen and (min-width:768px) {
   .home-block-item:hover .home-block-item__content {
     margin-top: -70px
@@ -2806,6 +2837,13 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
     left: 0;
     height: 100%;
     width: 50%
+  }
+  .fullscreen-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
   }
 }
 
@@ -2959,7 +2997,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 }
 
 .home-column-left .home-video-container .home-video__content-text .button-container {
-  margin-top: .8rem
+  margin-top: 3.8rem
 }
 
 .home-column-left .home-video-container .home-billboard__image-background {
@@ -3045,7 +3083,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 
 @media only screen and (min-width:768px) {
   .home-column-left .home-video-container .home-video__content-text .button-container {
-    margin-top: 2.5rem
+    margin-top: 6.5rem
   }
   .home-column-left .home-video-container .home-billboard__image {
     max-width: 50%
@@ -3138,7 +3176,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 
 @media only screen and (min-width:768px) {
   .home-column-left .home-block-row:nth-child(1) {
-    height: 66.6666666667%
+    height: 100%
   }
 }
 
@@ -3550,6 +3588,15 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
     font-size: 2rem;
     line-height: 1.5rem
   }
+}
+
+.home-block__icon{
+    width: 43px;
+    height: 72px;
+    display: inline-block;
+    position: absolute;
+    bottom: -11px;
+    right: -11px
 }
 
 .home-color-block-item__content .home-block__icon-computer {
@@ -8178,7 +8225,7 @@ textarea[name=message]:-ms-input-placeholder {
 .service-contact__container {
   position: relative;
   z-index: 1;
-  background: url(/web/20160602234155/http://www.niteco.com/img/service_contact_bg.png) center center no-repeat #282828;
+  background: #1d2e42;
   background-size: 100% 100%;
   padding: 50px 0
 }
@@ -8643,7 +8690,7 @@ textarea[name=message]:-ms-input-placeholder {
 }
 
 .careers-middle-block {
-  padding: 125px 0;
+  padding: 125px 0 175px;
   background-size: cover
 }
 
@@ -8661,7 +8708,7 @@ textarea[name=message]:-ms-input-placeholder {
   text-align: center;
   padding: 70px 15px;
   background: #fff;
-  margin-bottom: 66px
+  margin-bottom: 20px
 }
 
 @media only screen and (min-width:768px) {
@@ -8674,17 +8721,14 @@ textarea[name=message]:-ms-input-placeholder {
 .careers-middle-block .careers-step-detail .step-number {
   position: absolute;
   left: 50%;
-  top: -40px;
+  top: 0;
   width: 115px;
   height: 115px;
   margin-left: -57px;
-  border-radius: 100px;
-  border: 8px solid #fff;
+  background: url("../images/home-services-icon-2.png");
   line-height: 5.9375rem;
   font-size: 3.75rem;
   font-family: latoblack;
-  color: #facd20;
-  background: #282828
 }
 
 .careers-benefit-row .careers-benefit .benefit-content:nth-child(2n), .careers-benefit-row .careers-benefit.no-border-left {
@@ -8707,7 +8751,7 @@ textarea[name=message]:-ms-input-placeholder {
 @media only screen and (min-width:768px) {
   .careers-middle-block .careers-step-detail .step-content {
     height: 200px;
-    padding-top: 20px
+    padding-top: 50px
   }
 }
 
@@ -8737,7 +8781,7 @@ textarea[name=message]:-ms-input-placeholder {
 
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) {
   .careers-middle-block .careers-step-detail .step-content {
-    padding-top: 35px
+    padding-top: 60px
   }
 }
 
@@ -9414,7 +9458,7 @@ textarea[name=message]:-ms-input-placeholder {
 .career-steps__container {
   background-repeat: no-repeat!important;
   background-size: cover!important;
-  background: #3b4752
+  background: #ffffff
 }
 
 .career-steps__container .careers-block, .career-steps__container .page-description__title-container {

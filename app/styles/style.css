@@ -1,0 +1,161 @@
+.call_to_action {
+  border-top: 2px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.call_to_action .action {
+  height: 280px;
+  border-right: 2px solid #fff;
+  text-align: center;
+  width: 50%;
+}
+.call_to_action .action a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  display: block;
+  height: 100%;
+  padding: 114px 20px;
+}
+.call_to_action .action a h2 {
+  font-family: ProximaNova-Extrabld, tahoma, verdana, arial, sans-serif;
+  font-size: 28px;
+  letter-spacing: .05em;
+  line-height: 34px;
+  margin: 0px;
+}
+.call_to_action .action a p {
+  color: #53535B;
+  font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: .05em;
+  line-height: 28px;
+  margin: 5px 0px 0px;
+}
+.call_to_action .action a:hover {
+  content: '';
+  background: url('../../../../../codingdojo_assets.s3.amazonaws.com/images/global/calltoaction_edited_hover.png') no-repeat center center;
+  background-size: 104px, 125px;
+  display: block;
+}
+.call_to_action .action a:hover p {
+  color: #fff;
+}
+@media screen and (max-width: 980px) {
+  .call_to_action {
+    border-bottom: none;
+  }
+  .call_to_action .action {
+    width: 100% !important;
+    height: auto !important;
+    border-bottom: 3px solid #fff;
+    border-right: none !important;
+  }
+  .call_to_action .action a {
+    padding: 60px !important;
+  }
+  .call_to_action .action a p {
+    color: #00B7D2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .call_to_action p span {
+    display: block;
+  }
+  .call_to_action #view_programs a {
+    padding: 60px 20px !important;
+  }
+  .call_to_action .action {
+    height: auto;
+  }
+  .call_to_action .action a {
+    padding: 60px 20px !important;
+  }
+}
+.cta_box {
+  background: #272634;
+  padding: 100px 20px 100px;
+}
+.cta_box * {
+  color: #fff;
+  text-align: center;
+}
+.cta_box .container {
+  margin: 0px auto;
+  padding: 0px;
+}
+.cta_box .container .content_header h2 {
+  text-transform: uppercase;
+}
+.cta_box .container .content_header p {
+  margin: 25px auto 47px;
+  width: 75%;
+}
+.cta_box .boxes {
+  margin: 0px;
+  padding: 0px;
+}
+.cta_box .boxes .box {
+  display: inline-block;
+  width: 20%;
+}
+.cta_box .boxes .box .box_content {
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 20px;
+  min-height: 200px;
+  cursor: pointer;
+}
+.cta_box .boxes .box .box_content:hover {
+  content: '';
+  background: url('../../../../../codingdojo_assets.s3.amazonaws.com/images/global/hover_lighter_larger.png') no-repeat center center;
+  background-size: 104px, 125px;
+  background-color: #00B7D2;
+  display: inline-block;
+}
+.cta_box .boxes .box .box_content h4 {
+  font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cta_box #cta_button_container {
+  margin-top: 55px;
+}
+@media screen and (max-width: 640px) {
+  .cta_box {
+    padding: 60px 20px;
+  }
+  .cta_box .boxes {
+    width: 100%;
+  }
+  .cta_box .boxes .box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cta_box .boxes .box:first-child {
+    margin-top: 0px;
+  }
+  .cta_box .boxes .box .box_content {
+    height: auto;
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta_box {
+    padding: 40px 15px;
+  }
+  .cta_box .boxes .box .box_content {
+    height: auto;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cta_box {
+    padding: 40px 15px;
+  }
+  .cta_box .boxes .box .box_content {
+    height: auto;
+    padding: 30px;
+  }
+}
