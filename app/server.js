@@ -21,6 +21,6 @@ app.get("/service", function(req, res) {
   res.sendFile(__dirname + '/views/service.html');
 })
 
-var server = app.listen(3103, function() {
+var server = app.listen(8080, function() {
   console.log('Listening on port %d', server.address().port);
 });
