@@ -2910,16 +2910,16 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 }
 
 .home-column-left .home-video-container .home-video__image-overlay {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  opacity: 1;
-  overflow: hidden
+	position: absolute;
+	z-index: 5;
+	top: 11%;
+	left: 0;
+	width: 100%;
+	height: 75%;
+	background-size: cover;
+	background-position: center center;
+	opacity: 1;
+	overflow: hidden;
 }
 
 .home-column-left .home-video-container .home-video__image-overlay img {
@@ -3602,39 +3602,8 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 .home-color-block-item__content .home-block__icon-computer {
   width: 170px;
   height: 125px;
-  background: url(/web/20160602234155/http://www.niteco.com/img/home-services-icon.png) 0 -94px no-repeat;
+  background: url(../images/home-services-icon-2.png) no-repeat;
   display: inline-block
-}
-
-.home-color-block-item__content .home-block__icon-mobile {
-  width: 43px;
-  height: 72px;
-  display: inline-block;
-  background: url(/web/20160602234155/http://www.niteco.com/img/home-services-icon.png) -12px -5px no-repeat;
-  position: absolute;
-  bottom: -11px;
-  right: -11px
-}
-
-.home-color-block-item__content .home-block__icon-spin-big {
-  width: 49px;
-  height: 49px;
-  background: url(/web/20160602234155/http://www.niteco.com/img/home-services-icon.png) -93px -16px no-repeat;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  margin-left: -24px
-}
-
-.home-color-block-item__content .home-block__icon-spin-small {
-  width: 26px;
-  height: 26px;
-  background: url(/web/20160602234155/http://www.niteco.com/img/home-services-icon.png) -49px -8px no-repeat;
-  background-size: 95px auto;
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  margin-left: -13px
 }
 
 .home-color-block-item__content .home-block__icon-puzzle-white {
