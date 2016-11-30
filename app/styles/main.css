@@ -263,7 +263,7 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   position: relative
 }
 
-.btn-black, .btn-white-round, .btn-white-square, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+.btn-black, .btn-white-round, .btn-white-square, .button-blue, .button-orange, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
   font-family: robotolight;
   display: inline-block;
   text-transform: uppercase;
@@ -277,26 +277,30 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   font-family: robotobold;
 }
 
+.button-orange{
+	font-family: robotomedium;
+}
+
 @media only screen and (min-width:768px) {
-  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .button-orange, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1rem
   }
 }
 
 @media only screen and (min-width:992px) {
-  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .button-orange, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.1rem
   }
 }
 
 @media only screen and (min-width:1200px) {
-  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .button-orange, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.2rem
   }
 }
 
 @media only screen and (min-width:1900px) {
-  .btn-black, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
+  .btn-black, .button-orange, .btn-white-square, .btn-white-round, .button-blue, .button-blue-border, .home-column-left .home-video-container:hover .button-blue-border {
     font-size: 1.2rem
   }
 }
@@ -311,6 +315,16 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
 }
 
 .button-blue:hover {
+  color: #1d2e42
+}
+
+
+.button-orange {
+  background-color: #fe8e22;
+  color: #1d2e42
+}
+
+.button-orange:hover {
   color: #1d2e42
 }
 
@@ -2115,7 +2129,7 @@ div.ppt {
   padding: 60px 0;
   position: relative;
   z-index: 1;
-  background: #fff;
+  background: #f5f6f8;
   font-size: 0
 }
 
@@ -7773,7 +7787,7 @@ textarea.input__field {
 }
 
 textarea[name=message] {
-  height: 255px;
+  height: 150px;
   padding: 10px 15px 15px;
   margin-bottom: 25px
 }
@@ -7857,7 +7871,6 @@ textarea[name=message]:-ms-input-placeholder {
 .input__field--contact {
   z-index: 10;
   width: 100%;
-  background: 0 0;
   border: 1px solid #d0d0d0;
   color: #2c3e50;
   font-size: .75rem;
@@ -8012,10 +8025,7 @@ textarea[name=message]:-ms-input-placeholder {
 }
 
 #contact-box {
-  background-color: #fff;
   border: 1px solid #f0f1f3;
-  padding-top: 10px;
-  padding-bottom: 30px
 }
 
 #contact-box .contact-column {
@@ -8026,10 +8036,6 @@ textarea[name=message]:-ms-input-placeholder {
 @media only screen and (min-width:768px) {
   .section-our-contact-form .error-message {
     font-size: .875rem
-  }
-  #contact-box {
-    padding-top: 28px;
-    padding-bottom: 90px
   }
   #contact-box .contact-column {
     padding-left: 28px;
@@ -8663,6 +8669,11 @@ textarea[name=message]:-ms-input-placeholder {
   background-size: cover
 }
 
+#contact .careers-middle-block {
+  padding: 80px 0 0px;
+  background-size: cover
+}
+
 @media only screen and (max-width:767px) {
   .careers-page-container .view-jobs-opening {
     margin-top: 25px
@@ -8680,10 +8691,21 @@ textarea[name=message]:-ms-input-placeholder {
   margin-bottom: 20px
 }
 
+#contact .careers-middle-block .careers-step-detail {
+  position: relative;
+  text-align: center;
+  padding: 0 0;
+  background: #fff;
+  margin-bottom: 20px
+}
 @media only screen and (min-width:768px) {
   .careers-middle-block .careers-step-detail {
     margin-bottom: 0;
     padding-bottom: 30px
+  }
+  #team .careers-middle-block .careers-step-detail {
+    margin-bottom: 0;
+    padding-bottom: 90px
   }
 }
 
@@ -8721,6 +8743,9 @@ textarea[name=message]:-ms-input-placeholder {
   .careers-middle-block .careers-step-detail .step-content {
     height: 200px;
     padding-top: 50px
+  }
+  #contact .careers-middle-block .careers-step-detail .step-content {
+    padding-top: 0
   }
 }
 
