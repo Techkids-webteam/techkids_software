@@ -691,4 +691,16 @@ border-color: #111 transparent transparent transparent;
 	padding: 125px 0 60px;
 }
 
+#team .careers-middle-block .careers-step-detail .step-content h3{
+	font-size: 1.3rem;
+}
+#team .careers-middle-block .careers-step-detail .step-content p{
+	margin: -14px;
+}
 
+.service-subtitle{
+	font-family: robotoregular;
+	font-size: 1.25rem;
+	color:#ffffff;
+	margin-bottom: 25px;
+}
