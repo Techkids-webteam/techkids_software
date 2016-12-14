@@ -4595,12 +4595,12 @@
                 return a.indexOf(window.location.host) < 0 ? window.location.host + a : a
             }
 
-            function j(a) {
-                for (var b = l.find(".top-navigator__menu-container").find("a"), c = i(a), d = 0; d < b.length; d++) {
-                    var e = i(b.eq(d).attr("href"));
-                    e == c ? b.eq(d).addClass("selected-item") : e.length >= c.length ? e.lastIndexOf(c) == e.length - c.length ? b.eq(d).addClass("selected-item") : b.eq(d).removeClass("selected-item") : c.lastIndexOf(e) == c.length - e.length ? b.eq(d).addClass("selected-item") : b.eq(d).removeClass("selected-item")
-                }
-            }
+            //function j(a) {
+            //    for (var b = l.find(".top-navigator__menu-container").find("a"), c = i(a), d = 0; d < b.length; d++) {
+            //        var e = i(b.eq(d).attr("href"));
+            //        e == c ? b.eq(d).addClass("selected-item") : e.length >= c.length ? e.lastIndexOf(c) == e.length - c.length ? b.eq(d).addClass("selected-item") : b.eq(d).removeClass("selected-item") : c.lastIndexOf(e) == c.length - e.length ? b.eq(d).addClass("selected-item") : b.eq(d).removeClass("selected-item")
+            //    }
+            //}
 
             function k(b) {
                 return m ? (b && b.preventDefault(), m = !m, l.toggleClass("is-active"), l.parents("body").find(".content-wrapper").toggleClass("show-menu", l.hasClass("is-active")), a("body").removeClass("overflow-hidden"), !1) : !1
