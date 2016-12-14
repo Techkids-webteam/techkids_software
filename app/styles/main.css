@@ -2935,7 +2935,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 .home-column-left .home-video-container .home-video__image-overlay {
 	position: absolute;
     z-index: 5;
-    top: 35%;
+    top: 32%;
     left: 9%;
     width: 80%;
     height: 40%;
