@@ -11,7 +11,7 @@ app.use('/libs/', express.static(__dirname + '/libs/'));
 app.set('views', __dirname + '/views/');
 
 app.use(bodyParser.urlencoded({
-  extended: false
+  extended: true
 }));
 
 app.use(bodyParser.json());
