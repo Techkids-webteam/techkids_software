@@ -4529,7 +4529,7 @@
                     m.Adapter.trigger(a, "hashchange")
                 })))
             }, m.options && m.options.delayInit || m.init()
-        }(window), c("vendor/history", function() {}), c("base/top-navigator", ["jquery", "underscore", "base/modules/animate", "base/request-page", "base/page-scroll"], function(a, b, c, d, e) {
+        }(window), c("vendor/history", function() {}), c("base/top-navigator", ["jquery", "underscore", "base/modules/animate", "base/page-scroll"], function(a, b, c, d, e) {
             "use strict";
 
             function f() {
