@@ -47,7 +47,14 @@
 </head>
 
 <body>
-  <!-- Add your site or app content here -->
+<div class="loading-container" data-require="base/loading">
+            <div class="loading-mask">
+            </div>
+        </div>
+        <div class="page-wrapper disable-scrolling">
+            
+
+ <!-- Add your site or app content here -->
   <section class="top-navigator-container" data-require="base/top-navigator">
     <a class="top-navigotar__link" href="/" title="">
       <img class="top-navigator__logo" src="./images/White.png" alt="Chúng tôi ở đây để tạo ra những con người có thể thay đổi thế giới." />
@@ -65,13 +72,13 @@
       <div class="top-navigator__menu-container__wrapper">
         <ul>
           <li>
-            <a href="/service" class="">Our Service</a>
+            <a href="http://techkids.vn:8080/service" class="">Our Service</a>
           </li>
           <li>
-            <a href="/our-team" class="">Our Team</a>
+            <a href="http://techkids.vn:8080/our-team" class="">Our Team</a>
           </li>
           <li>
-            <a href="/portfolio" class="">Our Portfolio</a>
+            <a href="http://techkids.vn:8080/portfolio" class="">Our Portfolio</a>
           </li>
           <li>
             <a href="#" class="">Our Working Process</a>
@@ -256,10 +263,105 @@
         </p>
       </div>
     </div>
-  </section>
+  </section>        
+       
+
+        </div>
+
+
+
+
+<div class="search-container" data-require="base/search" data-action-search="/SearchPage/GetSearchResult">
+    
+    <div class="close-button"></div>
+    <div class="search-form">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search..." />
+        <img class="img-loading" src="http://web.archive.org/web/20160215221538im_/http://niteco.com/img/ajax-loader.gif" alt="Loading icon" />
+    </div>
+    <div class="container-fluid search-result">
+    </div>
+    <div class="container-fluid search-default">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4 search-default__column">
+                <h3>About Niteco</h3>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/service-list/" title="">
+                                    Our Services
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/technologies/" title="">
+                                    Technologies
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/our-team/" title="">
+                                    Our Team
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/engagement-models/" title="">
+                                    Engagement Models
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://charity.niteco.se/" title="">
+                                    Nicef Charity
+                                </a>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 search-default__column">
+                <h3>Office Location</h3>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/contact-us/" title="">
+                                    Hanoi
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/contact-us/" title="">
+                                    Ho Chi Minh City
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/contact-us/" title="">
+                                    Stockholm
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/contact-us/" title="">
+                                    Palm Desert
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/contact-us/" title="">
+                                    Causeway Bay
+                                </a>
+
+            </div>
+          
+            <div class="col-xs-12 col-sm-6 col-lg-4 search-default__column">
+                <h3>Job Openings</h3>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/careers/senior-.net-developers/" title="">
+                                    Senior .NET Developer
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/careers/sharepoint-2013-developer/" title="">
+                                    SharePoint 2013 Developer
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/careers/senior-tester/" title="">
+                                    Senior Tester
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/careers/project-manager/" title="">
+                                    Project Manager
+                                </a>
+                                <a class="search-default__item search-default__location" href="http://web.archive.org/web/20160215221538/http://niteco.com/careers/implementation-consultant/" title="">
+                                    Implementation Consultant
+                                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+
+
+        
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
-  <!--<script src="scripts/script.js"></script>-->
+  <script src="scripts/script.js"></script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
     (function(i, s, o, g, r, a, m) {
