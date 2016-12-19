@@ -332,7 +332,8 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
 }
 
 .button-orange:hover {
-  color: #1d2e42
+  color: #1d2e42;
+  background-color: #ec7401;
 }
 
 .button-blue-border {
@@ -359,10 +360,10 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
     cursor: pointer;
     margin-left: 25px;
     border: 3px solid #fff;
-    /*padding: 1.3rem 2rem;*/
+    padding: 1.25rem 2rem;
     outline: 0 none;
     width: 22%;
-    height: 110px;
+    height: 100px;
     display: inline-flex;
     flex-grow: 1;
     align-items: stretch;
@@ -2389,8 +2390,8 @@ a.view-more-jobs .mask {
 a.view-more-jobs:active, a.view-more-jobs:focus, a.view-more-jobs:hover {
   text-decoration: none;
   outline: 0;
-  color: #facd20;
-  background-color: rgba(0, 0, 0, .2);
+  color: #1d2e42;
+  background-color: #ec7401;
   border-color: #1d2e42
 }
 

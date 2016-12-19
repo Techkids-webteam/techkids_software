@@ -36,6 +36,14 @@ app.get("/our-team", function(req, res) {
   res.sendFile(__dirname + '/views/team.html');
 })
 
+app.get("/test", function(req, res) {
+  res.sendFile(__dirname + '/basic.html');
+})
+
+app.get("/test2", function(req, res) {
+  res.sendFile(__dirname + '/test.html');
+})
+
 var server = app.listen(8080, function() {
   console.log('Listening on port %d', server.address().port);
 });
