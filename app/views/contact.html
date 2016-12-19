@@ -41,92 +41,72 @@
   <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/menu.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+  <div id="o-wrapper" class="o-wrapper">
 
-            <script type="text/javascript">
-                var isInEditMode = false;
-            </script>
-<div class="loading-container" data-require="base/loading">
-            <div class="loading-mask">
-            </div>
+    <header class="o-header" style="position: fixed; top: 0; left: 0; right: 0px; z-index: 10000;">
+      <nav class="o-header-nav">
+        <div class="c-header" style="position: absolute">
+          <a id="c-button--push-right" href="#" class="header__icon" id="header__icon"></a>
+          <a href="/"><img class="header__logo" src="./images/White.png" alt="Chúng tôi ở đây để tạo ra những con người có thể thay đổi thế giới." /></a>
         </div>
-  <!-- Add your site or app content here -->
-  <div class="page-wrapper disable-scrolling">
-      <section class="top-navigator-container" data-require="base/top-navigator">
-    <a class="top-navigotar__link" href="/" title="">
-      <img class="top-navigator__logo" src="./images/White.png" alt="Chúng tôi ở đây để tạo ra những con người có thể thay đổi thế giới." />
-    </a>
-    <div class="hamburger-menu__container">
-      <span class="hamburger-menu__button">
-          <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <label class="hamburger-menu__text">Menu</label>
-      </span>
-    </div>
-    <div class="top-navigator__menu-container">
-      <div class="top-navigator__menu-container__wrapper">
-        <ul>
-          <li>
-            <a href="http://techkids.vn:8080/service" class="">Our Service</a>
-          </li>
-          <li>
-            <a href="http://techkids.vn:8080/our-team" class="">Our Team</a>
-          </li>
-          <li>
-            <a href="http://techkids.vn:8080/portfolio" class="">Our Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="">Our Working Process</a>
-          </li>
-          <li>
-            <a href="#" class="">Our Happy Partners</a>
-          </li>
-          <li>
-            <a href="#" class="">Our School</a>
-          </li>
-          <li>
-            <a href="#" class="">Careers Opportunities</a>
-          </li>
-          <li>
-            <a href="#" class="">Blog (Vietnamese Only)</a>
-          </li>
-          <li>
-            <a href="http://techkids.vn:8080/contact" class="">Contact Us</a>
-          </li>
-        </ul>
+      </nav>
+      <div class="o-container">
       </div>
-    </div>
-  </section>
-    <div class="content-container">
-      <div class="content-wrapper">
-        <section class="page-introduction-container" style="height: 576px;">
-          <div class="page-introduction-top-block" data-require="base/page-introduction">
-            <div class="page-introduction-top-block__background page-introduction__background" style="top: 0px;">
-              <picture>
-                <source media="(min-width: 75rem)" srcset="../images/contact-bg.jpg">
-                <!-- <source media="(min-width: 62rem)" srcset="/globalassets/header-new-images/desktop/engagement-header.jpg?preset=1300">
+    </header>
+    <!-- /o-header -->
+  </div>
+  <!-- /o-wrapper -->
+
+
+  <nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+    <button class="c-menu__close"><i class="material-icons ">&#xE5CD;</i></button>
+    <ul class="c-menu__items">
+      <li class="c-menu__item"><a href="/service" class="c-menu__link">Our Services</a></li>
+      <li class="c-menu__item"><a href="/our-team" class="c-menu__link">Our Team</a></li>
+      <li class="c-menu__item"><a href="/portfolio" class="c-menu__link">Our Portfolio</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our Working Process</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our Happy Partners</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our School</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Careers Opportunities</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Blog (Vietnamese Only)</a></li>
+      <li class="c-menu__item"><a href="/contact" class="c-menu__link">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- /c-menu push-right -->
+
+  <div id="c-mask" class="c-mask"></div>
+  <!-- /c-mask -->
+  <div class="content-container">
+    <div class="content-wrapper">
+      <section class="page-introduction-container" style="height: 576px;">
+        <div class="page-introduction-top-block" data-require="base/page-introduction">
+          <div class="page-introduction-top-block__background page-introduction__background" style="top: 0px;">
+            <picture>
+              <source media="(min-width: 75rem)" srcset="../images/contact-bg.jpg">
+              <!-- <source media="(min-width: 62rem)" srcset="/globalassets/header-new-images/desktop/engagement-header.jpg?preset=1300">
                 <source media="(min-width: 48rem)" srcset="/globalassets/header-new-images/tablet/engagement-header-tablet.jpg?preset=1000, /globalassets/header-new-images/tablet_2x/engagement-header-tablet_2x.jpg?preset=1900 2x"> -->
-                <img src="../images/contact-bg.jpg" alt="Contact us">
-              </picture>
-            </div>
-            <div class="page-introduction-top-block__content page-introduction__content" style="margin-top: 65px; opacity: 1;">
-              <h1 class="myriadpro">Contact us</h1>
-              <span class="page-introduction-top-block__content__sub-title">
+              <img src="../images/contact-bg.jpg" alt="Contact us">
+            </picture>
+          </div>
+          <div class="page-introduction-top-block__content page-introduction__content" style="margin-top: 65px; opacity: 1;">
+            <h1 class="myriadpro">Contact us</h1>
+            <span class="page-introduction-top-block__content__sub-title">
                  We'd love to hear from you
               </span>
-			</div>
+          </div>
           <div class="page-introduction-top-block__arrow-down page-introduction__arrow" style="bottom: 80px;">
             <i class="fa fa-angle-down"></i>
           </div>
-      </div>
+        </div>
       </section>
       <div class="career-steps__container" id="contact">
         <div class="careers-middle-block careers-block">
@@ -138,7 +118,7 @@
                   <div class="step-content">
                     <h3 class="step-name">Vietnam</h3>
                     <p>
-						TechHub Chua Lang: 10, alley 121, Chua Lang
+                      TechHub Chua Lang: 10, alley 121, Chua Lang
                     </p>
                   </div>
                 </div>
@@ -148,7 +128,7 @@
                   <div class="step-content">
                     <h3 class="step-name">Tokyo</h3>
                     <p>
-						TechHub Chua Boc: 101D, alley 95, Chua Boc
+                      TechHub Chua Boc: 101D, alley 95, Chua Boc
                     </p>
                   </div>
                 </div>
@@ -158,8 +138,8 @@
                   <div class="step-content">
                     <h3 class="step-name">Singapore</h3>
                     <p>
-						TechHub Chua Boc: 101D, alley 95, Chua Boc
-					</p>
+                      TechHub Chua Boc: 101D, alley 95, Chua Boc
+                    </p>
                   </div>
                 </div>
               </div>
@@ -167,71 +147,77 @@
           </div>
         </div>
       </div>
-	  <div class="page-description__title-container">
+      <div class="page-description__title-container">
         <div class="container">
-            <div class="page-description__title">
-                Leave your contact here
-            </div>
-			<p>
-					Use the form below to tell us about your project and business needs.<br/>
-					We’ll be in touch soon.
-			</p>
-			<div class="col-xs-6" id="ct-form" style="margin: 0 25%">
-				<div class="row" id="contact-box">
-					<img class="img-loading" id="imgLoading" alt="Loading icon" style="display: none;position: absolute;top:50%;left:50%;z-index:10;margin:-70px 0 0 -32px;" src="/img/ajax-loader.gif">
-					<!--Contact Box-->
-					<div class="col-xs-12 col-sm-12 col-md-12 contact-column">
-						<!--Left-->
-						<div class="row">
-							<div class="row col-xs-12" style="width:105%">
-								<div class="col-xs-12 col-sm-6 col-md-6">
-									<span class="input">
-										<span class="input__label--top">First Name*</span>
-										<input class="input__field input__field--contact" type="text" name="fullname" id="Name">
-										<span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
-									</span>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-6">
-									<span class="input">
-										<span class="input__label--top">Last Name*</span>
-										<input class="input__field input__field--contact" type="text" name="fullname" id="Name">
-										<span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
-									</span>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<span class="input">
+          <div class="page-description__title">
+            Leave your contact here
+          </div>
+          <p>
+            Use the form below to tell us about your project and business needs.<br/> We’ll be in touch soon.
+          </p>
+          <div class="col-xs-6" id="ct-form" style="margin: 0 25%">
+            <div class="row" id="contact-box">
+              <img class="img-loading" id="imgLoading" alt="Loading icon" style="display: none;position: absolute;top:50%;left:50%;z-index:10;margin:-70px 0 0 -32px;" src="/img/ajax-loader.gif">
+              <!--Contact Box-->
+              <div class="col-xs-12 col-sm-12 col-md-12 contact-column">
+                <!--Left-->
+                <div class="row">
+                  <div class="row col-xs-12" style="width:105%">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                      <span class="input">
+   					  <span class="input__label--top">First Name*</span>
+                      <input class="input__field input__field--contact" type="text" name="fullname" id="Name">
+                      <span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
+                      </span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                      <span class="input">
+				      <span class="input__label--top">Last Name*</span>
+                      <input class="input__field input__field--contact" type="text" name="fullname" id="Name">
+                      <span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <span class="input">
 										<span class="input__label--top">Email Address*</span>
-										<input class="input__field input__field--contact" type="text" name="email" id="Email">
-										<span class="input__label-content input__label-content--contact error-message" id="error-for-Email"></span>
-									</span>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<span class="input">
+                      <input class="input__field input__field--contact" type="text" name="email" id="Email">
+                      <span class="input__label-content input__label-content--contact error-message" id="error-for-Email"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <span class="input">
 									<span class="input__label--top">Your Country</span>
-									<input class="input__field input__field--contact" type="text" name="country" id="country">
-									<span class="input__label-content input__label-content--contact error-message" id="error-for-country"></span>
-								</span>
-							</div>
-							<div class="col-xs-12">
-								<div class="input">
-									<span class="input__label--top">Message</span>
-									<textarea class="input__field input__field--contact" name="message" id="message"></textarea><grammarly-btn><div style="z-index: 11; opacity: 1; transform: translate(497px, 264px);" class="_9b5ef6-textarea_btn _9b5ef6-not_focused" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div></div></grammarly-btn>
-								</div>
-							</div>														
-						</div>
-						<a class="button-container">
-							<button class="button-orange" title="">CONTACT NOW</button>
-						</a>
-					</div><!--Left-->
-
-				
-				</div><!--Contact Box-->
-			</div>
+                    <input class="input__field input__field--contact" type="text" name="country" id="country">
+                    <span class="input__label-content input__label-content--contact error-message" id="error-for-country"></span>
+                    </span>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="input">
+                      <span class="input__label--top">Message</span>
+                      <textarea class="input__field input__field--contact" name="message" id="message"></textarea>
+                      <grammarly-btn>
+                        <div style="z-index: 11; opacity: 1; transform: translate(497px, 264px);" class="_9b5ef6-textarea_btn _9b5ef6-not_focused" data-grammarly-reactid=".0">
+                          <div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0">
+                            <div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div>
+                          </div>
+                        </div>
+                      </grammarly-btn>
+                    </div>
+                  </div>
+                </div>
+                <a class="button-orange">
+                  CONTACT NOW
+                </a>
+              </div>
+              <!--Left-->
+            </div>
+            <!--Contact Box-->
+          </div>
         </div>
-	  </div>
+      </div>
       <section class="home-block-row our-work-footer container-zindex-one" data-require="base/click-item">
         <div class="our-works-footer__item home-block-item home-block-item__dark-bg">
           <a title="Tell Us What You Need" href="#">
@@ -267,8 +253,8 @@
             <span class="home-block-item__content-container">
             <span class="home-block-item__content">
                 <!-- <span class="home-block-item__small-text">See our portfolio</span> -->
-                <span class="home-block-item__big-text">How we can help you</span>
-                <span class="home-block-item__big-text">fast and effectively</span>
+            <span class="home-block-item__big-text">How we can help you</span>
+            <span class="home-block-item__big-text">fast and effectively</span>
             </span>
             <!-- <span class="home-block-item__content-second">
                 <p>There are a total of 64 technologies in our skill set</p>
@@ -278,27 +264,27 @@
         </div>
       </section>
     </div>
-  </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="scripts/script.js"></script>
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-78355215-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <!-- Built with love using Web Starter Kit -->
+    <!-- menus script -->
+    <script src="scripts/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-78355215-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
 </body>
 
 </html>

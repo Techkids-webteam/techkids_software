@@ -16,11 +16,11 @@ body.overflow-hidden {
   }
 }
 
- @font-face{
-	font-family: agudaregular;
-	src: url("../fonts/SVN-Aguda Regular.otf");
-	font-weight:normal;
-	font-style:normal;
+@font-face {
+  font-family: agudaregular;
+  src: url("../fonts/SVN-Aguda Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 a, img {
@@ -284,8 +284,8 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   font-family: robotobold;
 }
 
-.button-orange{
-	font-family: robotomedium;
+.button-orange {
+  font-family: robotomedium;
 }
 
 @media only screen and (min-width:768px) {
@@ -325,10 +325,10 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   color: #1d2e42
 }
 
-
 .button-orange {
   background-color: #fe8e22;
-  color: #1d2e42
+  color: #1d2e42;
+  cursor: pointer;
 }
 
 .button-orange:hover {
@@ -353,20 +353,19 @@ div.dark_rounded .pp_details, div.dark_square .pp_details, div.facebook .pp_deta
   color: #282828
 }
 
-
 .btn-white-square {
-    font-family: robotoregular;
-    color: #fff;
-    cursor: pointer;
-    margin-left: 25px;
-    border: 3px solid #fff;
-    padding: 1.25rem 2rem;
-    outline: 0 none;
-    width: 22%;
-    height: 100px;
-    display: inline-flex;
-    flex-grow: 1;
-    align-items: stretch;
+  font-family: robotoregular;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 25px;
+  border: 3px solid #fff;
+  padding: 1.25rem 2rem;
+  outline: 0 none;
+  width: 22%;
+  height: 100px;
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: stretch;
 }
 
 .btn-white-square:hover {
@@ -1739,7 +1738,7 @@ div.ppt {
   float: left;
   position: relative;
   top: 50%;
-  width: 17%; 
+  width: 17%;
   margin: 0 0 0 30px;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -2407,7 +2406,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 
 @media only screen and (min-width:992px) {
   a.view-more-jobs {
-	font-family: robotoblack;
+    font-family: robotoblack;
     float: right!important;
     display: inline-block;
     width: auto;
@@ -2934,16 +2933,16 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
 }
 
 .home-column-left .home-video-container .home-video__image-overlay {
-	position: absolute;
-    z-index: 5;
-    top: 32%;
-    left: 9%;
-    width: 80%;
-    height: 40%;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  top: 32%;
+  left: 9%;
+  width: 80%;
+  height: 40%;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  overflow: hidden;
 }
 
 .home-column-left .home-video-container .home-video__image-overlay img {
@@ -3614,13 +3613,13 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
   }
 }
 
-.home-block__icon{
-    width: 43px;
-    height: 72px;
-    display: inline-block;
-    position: absolute;
-    bottom: -11px;
-    right: -11px
+.home-block__icon {
+  width: 43px;
+  height: 72px;
+  display: inline-block;
+  position: absolute;
+  bottom: -11px;
+  right: -11px
 }
 
 .home-color-block-item__content .home-block__icon-computer {
@@ -8708,6 +8707,7 @@ textarea[name=message]:-ms-input-placeholder {
   background: #fff;
   margin-bottom: 20px
 }
+
 @media only screen and (min-width:768px) {
   .careers-middle-block .careers-step-detail {
     margin-bottom: 0;

@@ -1,4 +1,45 @@
 
+.header__logo {
+    float: left;
+    position: relative;
+    top: 50%;
+    width: 17%;
+    margin: 40px 0 0 30px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    opacity: .8;
+    cursor: pointer;
+}
+.header__logo:hover {
+  opacity: 1
+}
+
+@media only screen and (max-width:639px) {
+  .header__logo {
+    -webkit-transform: translate(0, -50%) scale(.8);
+    transform: translate(0, -50%) scale(.8);
+    margin: 40px 0 0 10px;
+    width: 50%;
+}
+}
+	.header__icon {
+  position: relative;
+  display: block;
+  float: right;
+  width: 50px;
+  height: 66px;
+  cursor: pointer;
+}
+.header__icon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: 0;
+  top: 16px;
+  left: 15px;
+  box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+}
 /* -----------------------------------------------------------------------------
 
   WRAPPER OBJECT
@@ -41,6 +82,7 @@
 }
 
 .o-header-nav {
+    height: 85px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -61,6 +103,70 @@
   color: #fff;
   background-color: #3184a1;
 }
+
+
+.c-menu__items {
+  width: 300px;
+  list-style: none;
+  font-family: robotobold;
+  font-size: 1rem;
+  margin: 10px auto 0;
+  padding: 5px
+}
+
+@media only screen and (min-width:768px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 30px auto 0;
+    padding: 15px
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 40px auto 0;
+    padding: 15px
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 40px auto 0;
+    padding: 0
+  }
+}
+
+@media only screen and (min-width:1900px) {
+  .c-menu__items {
+    font-size: 1.375rem;
+    margin: 70px auto 0;
+    padding: 0
+  }
+}
+
+.c-menu__items li {
+  transition: .25s ease;
+}
+
+.c-menu__items li:hover {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+@media only screen and (min-width:1200px) {
+  .c-menu__items li:hover {
+    padding-left: 10px
+  }
+}
+
+@media only screen and (min-width:1900px) {
+  .c-menu__items li:hover {
+    padding-left: 20px
+  }
+}
+
 
 .o-header__title {
   margin: 24px;
@@ -324,7 +430,7 @@ body.has-active-menu {
  */
 .c-menu__close {
   color: #fff;
-  background-color: #3184a1;
+  background-color: #525252;
   font-size: 14px;
   border: none;
   box-shadow: none;
@@ -371,9 +477,10 @@ body.has-active-menu {
   BUTTONS
   
 ----------------------------------------------------------------------------- */
-.c-buttons {
+.c-header {
   margin-bottom: 0;
   text-align: center;
+  width: 97%;
 }
 
 .c-button {

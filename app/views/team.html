@@ -41,92 +41,73 @@
   <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/menu.css">
 </head>
 
 <body>
 
-            <script type="text/javascript">
-                var isInEditMode = false;
-            </script>
-<div class="loading-container" data-require="base/loading">
-            <div class="loading-mask">
-            </div>
+  <div id="o-wrapper" class="o-wrapper">
+
+    <header class="o-header" style="position: fixed; top: 0; left: 0; right: 0px; z-index: 10000;">
+      <nav class="o-header-nav">
+        <div class="c-header" style="position: absolute">
+          <a id="c-button--push-right" href="#" class="header__icon" id="header__icon"></a>
+          <a href="/"><img class="header__logo" src="./images/White.png" alt="Chúng tôi ở đây để tạo ra những con người có thể thay đổi thế giới." /></a>
         </div>
-  <!-- Add your site or app content here -->
-  <div class="page-wrapper disable-scrolling">
-    <section class="top-navigator-container" data-require="base/top-navigator">
-      <a class="top-navigotar__link" href="/" title="">
-        <img class="top-navigator__logo" src="./images/White.png" alt="Chúng tôi ở đây để tạo ra những con người có thể thay đổi thế giới." />
-      </a>
-      <div class="hamburger-menu__container">
-        <span class="hamburger-menu__button">
-	    <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <label class="hamburger-menu__text">Menu</label>
-        </span>
+      </nav>
+      <div class="o-container">
       </div>
-      <div class="top-navigator__menu-container">
-        <div class="top-navigator__menu-container__wrapper">
-          <ul>
-            <li>
-              <a href="http://techkids.vn:8080/service" class="">Our Service</a>
-            </li>
-            <li>
-              <a href="http://techkids.vn:8080/our-team" class="">Our Team</a>
-            </li>
-            <li>
-              <a href="http://techkids.vn:8080/portfolio" class="">Our Portfolio</a>
-            </li>
-            <li>
-              <a href="#" class="">Our Working Process</a>
-            </li>
-            <li>
-              <a href="#" class="">Our Happy Partners</a>
-            </li>
-            <li>
-              <a href="#" class="">Our School</a>
-            </li>
-            <li>
-              <a href="#" class="">Careers Opportunities</a>
-            </li>
-            <li>
-              <a href="#" class="">Blog (Vietnamese Only)</a>
-            </li>
-            <li>
-              <a href="http://techkids.vn:8080/contact" class="">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div class="content-container">
-      <div class="content-wrapper">
-        <section class="page-introduction-container" style="height: 576px;">
-          <div class="page-introduction-top-block" data-require="base/page-introduction">
-            <div class="page-introduction-top-block__background page-introduction__background" style="top: 0px;">
-              <picture>
-                <source media="(min-width: 75rem)" srcset="../images/background3.jpg">
-                <!-- <source media="(min-width: 62rem)" srcset="/globalassets/header-new-images/desktop/engagement-header.jpg?preset=1300">
+    </header>
+    <!-- /o-header -->
+  </div>
+  <!-- /o-wrapper -->
+
+
+  <nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+    <button class="c-menu__close"><i class="material-icons ">&#xE5CD;</i></button>
+    <ul class="c-menu__items">
+      <li class="c-menu__item"><a href="/service" class="c-menu__link">Our Services</a></li>
+      <li class="c-menu__item"><a href="/our-team" class="c-menu__link">Our Team</a></li>
+      <li class="c-menu__item"><a href="/portfolio" class="c-menu__link">Our Portfolio</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our Working Process</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our Happy Partners</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Our School</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Careers Opportunities</a></li>
+      <li class="c-menu__item"><a href="#" class="c-menu__link">Blog (Vietnamese Only)</a></li>
+      <li class="c-menu__item"><a href="/contact" class="c-menu__link">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- /c-menu push-right -->
+
+  <div id="c-mask" class="c-mask"></div>
+  <!-- /c-mask -->
+  <div class="content-container">
+    <div class="content-wrapper">
+      <section class="page-introduction-container" style="height: 576px;">
+        <div class="page-introduction-top-block" data-require="base/page-introduction">
+          <div class="page-introduction-top-block__background page-introduction__background" style="top: 0px;">
+            <picture>
+              <source media="(min-width: 75rem)" srcset="../images/background3.jpg">
+              <!-- <source media="(min-width: 62rem)" srcset="/globalassets/header-new-images/desktop/engagement-header.jpg?preset=1300">
                 <source media="(min-width: 48rem)" srcset="/globalassets/header-new-images/tablet/engagement-header-tablet.jpg?preset=1000, /globalassets/header-new-images/tablet_2x/engagement-header-tablet_2x.jpg?preset=1900 2x"> -->
-                <img src="../images/background3.jpg" alt="Our Team">
-              </picture>
-            </div>
-            <div class="page-introduction-top-block__content page-introduction__content" style="margin-top: 65px; opacity: 1;">
-              <h1 class="myriadpro">People behind TechKids</h1>
-              <span class="page-introduction-top-block__content__sub-title">
+              <img src="../images/background3.jpg" alt="Our Team">
+            </picture>
+          </div>
+          <div class="page-introduction-top-block__content page-introduction__content" style="margin-top: 65px; opacity: 1;">
+            <h1 class="myriadpro">People behind TechKids</h1>
+            <span class="page-introduction-top-block__content__sub-title">
                  Rebels. Misfits. Extraordinaries.
               </span>
           </div>
           <div class="page-introduction-top-block__arrow-down page-introduction__arrow" style="bottom: 80px;">
             <i class="fa fa-angle-down"></i>
           </div>
-      </div>
+        </div>
       </section>
       <div class="career-steps__container" id="team">
         <div class="careers-middle-block careers-block">
@@ -139,7 +120,7 @@
                     <p>
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     </p>
                     <p></p>
                   </div>
@@ -153,7 +134,7 @@
                     <p>
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     </p>
                     <p></p>
                   </div>
@@ -165,27 +146,27 @@
                   <div class="step-content">
                     <h3 class="step-name">Lorem ipsum dolor</h3>
                     <p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-					</p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    </p>
                     <p></p>
                   </div>
                   <img class="step-number" src="../images/Layer 3- our team.png" alt="">
                 </div>
               </div>
-			  <div class="col-xs-12 col-sm-3 checking-animate slide-in-from-bottom">
+              <div class="col-xs-12 col-sm-3 checking-animate slide-in-from-bottom">
                 <div class="careers-step-detail">
                   <div class="step-content">
                     <h3 class="step-name">Lorem ipsum dolor</h3>
                     <p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-					</p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    </p>
                     <p></p>
                   </div>
                   <img class="step-number" src="../images/Layer 4- our team.png" alt="">
                 </div>
               </div>
             </div>
-			<div class="row careers-apply-step">
+            <div class="row careers-apply-step">
               <div class="col-xs-12 col-sm-3 checking-animate slide-in-from-bottom">
                 <div class="careers-step-detail">
                   <div class="step-content">
@@ -207,7 +188,7 @@
                     <p>
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     </p>
                     <p></p>
                   </div>
@@ -228,14 +209,14 @@
                   <img class="step-number" src="../images/Layer 7- our team.png" alt="our care">
                 </div>
               </div>
-			    <div class="col-xs-12 col-sm-3 checking-animate slide-in-from-bottom">
+              <div class="col-xs-12 col-sm-3 checking-animate slide-in-from-bottom">
                 <div class="careers-step-detail">
                   <div class="step-content">
                     <h3 class="step-name">Lorem ipsum dolor</h3>
                     <p>
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     </p>
                     <p></p>
                   </div>
@@ -295,8 +276,8 @@
             <span class="home-block-item__content-container">
             <span class="home-block-item__content">
                 <!-- <span class="home-block-item__small-text">See our portfolio</span> -->
-                <span class="home-block-item__big-text">How we can help you</span>
-                <span class="home-block-item__big-text">fast and effectively</span>
+            <span class="home-block-item__big-text">How we can help you</span>
+            <span class="home-block-item__big-text">fast and effectively</span>
             </span>
             <!-- <span class="home-block-item__content-second">
                 <p>There are a total of 64 technologies in our skill set</p>
@@ -311,6 +292,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="scripts/menu.js"></script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
     (function(i, s, o, g, r, a, m) {

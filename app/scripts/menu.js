@@ -1,4 +1,4 @@
-	 (function(window) {
+(function(window) {
 
   'use strict';
 
@@ -6,8 +6,8 @@
    * Extend Object helper function.
    */
   function extend(a, b) {
-    for(var key in b) { 
-      if(b.hasOwnProperty(key)) {
+    for (var key in b) {
+      if (b.hasOwnProperty(key)) {
         a[key] = b[key];
       }
     }
@@ -37,10 +37,10 @@
    * Menu Options.
    */
   Menu.prototype.options = {
-    wrapper: '#o-wrapper',          // The content wrapper
-    type: 'slide-left',             // The menu type
-    menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
-    maskId: '#c-mask'               // The ID of the mask
+    wrapper: '#o-wrapper', // The content wrapper
+    type: 'slide-left', // The menu type
+    menuOpenerClass: '.c-button', // The menu opener class names (i.e. the buttons)
+    maskId: '#c-mask' // The ID of the mask
   };
 
   /**
@@ -119,20 +119,19 @@
   window.Menu = Menu;
 
 })(window);
-  </script>
-  <script type="text/javascript">
-	  /**
-   * Push right instantiation and action.
-   */
-  var pushRight = new Menu({
-    wrapper: '#o-wrapper',
-    type: 'push-right',
-    menuOpenerClass: '.c-button',
-    maskId: '#c-mask'
-  });
-  var pushRightBtn = document.querySelector('#c-button--push-right');
-  
-  pushRightBtn.addEventListener('click', function(e) {
-    e.preventDefault;
-    pushRight.open();
-  });
+/**
+ * Push right instantiation and action.
+ */
+var pushRight = new Menu({
+  wrapper: '#o-wrapper',
+  type: 'push-right',
+  menuOpenerClass: '.c-button',
+  maskId: '#c-mask'
+});
+
+var pushRightBtn = document.querySelector('#c-button--push-right');
+
+pushRightBtn.addEventListener('click', function(e) {
+  e.preventDefault;
+  pushRight.open();
+});

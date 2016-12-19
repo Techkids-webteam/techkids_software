@@ -10,9 +10,11 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-	display: none; 
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+  display: none;
 }
 
 body {
@@ -349,6 +351,7 @@ footer.footer {
   -ms-transition: color 0.28s ease;
   transition: color 0.28s ease;
 }
+
 nav {
   background-color: transparent;
 }
@@ -601,106 +604,126 @@ footer a:hover, footer a:focus {
   width: 100% !important;
 }
 
-.footer0 p{
-    font-family: "Roboto";
-    font-size: 1.7rem;
+.footer0 p {
+  font-family: "Roboto";
+  font-size: 1.7rem;
 }
 
 
 /* the important styles */
 
 .arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  top:75%;
-  margin-left:-5em;
-  background:#111;
-  width:10em;
-  height:10em;
-  padding:4em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
-  box-shadow:0px 0px 5px 0px #333;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 75%;
+  margin-left: -5em;
+  background: #111;
+  width: 10em;
+  height: 10em;
+  padding: 4em 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block;
+  box-shadow: 0px 0px 5px 0px #333;
 }
 
 .arrow {
-  float:left;
-  position:relative;
+  float: left;
+  position: relative;
   width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
 }
 
 .arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
+  content: '';
+  position: absolute;
+  top: -3.2em;
+  left: -3em;
   width: 0px;
-height: 0px;
-border-style: solid;
-border-width: 3em 3em 0 3em;
-border-color: #111 transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
 }
-
 
 .hint {
-  position:absolute;
-  top:0.6em;
-  width:100%;
-  left:0;
-  font-size:2em;
-  font-style:italic;
-  text-align:center;
-  color:#fff;
-  opacity:0;
+  position: absolute;
+  top: 0.6em;
+  width: 100%;
+  left: 0;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
 }
-
 
 .arrow-wrap:hover .hint {
-  opacity:1;
+  opacity: 1;
 }
 
-
-  @-webkit-keyframes arrows {
-    0% { top:0; }
-    10% { top:12%; }
-    20% { top:0; }
-    30% { top:12%; }
-    40% { top:-12%; }
-    50% { top:12%; }
-    60% { top:0; }
-    70% { top:12%; }
-    80% { top:-12%; }
-    90% { top:12%; }
-    100% { top:0; }
+@-webkit-keyframes arrows {
+  0% {
+    top: 0;
   }
-  
-  .arrow-wrap .arrow {
-    -webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 3s;
+  10% {
+    top: 12%;
   }
-  
-#team .careers-middle-block{
-	padding: 125px 0 60px;
+  20% {
+    top: 0;
+  }
+  30% {
+    top: 12%;
+  }
+  40% {
+    top: -12%;
+  }
+  50% {
+    top: 12%;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: 12%;
+  }
+  80% {
+    top: -12%;
+  }
+  90% {
+    top: 12%;
+  }
+  100% {
+    top: 0;
+  }
 }
 
-#team .careers-middle-block .careers-step-detail .step-content h3{
-	font-size: 1.3rem;
-}
-#team .careers-middle-block .careers-step-detail .step-content p{
-	margin: -14px;
+.arrow-wrap .arrow {
+  -webkit-animation: arrows 2.8s 0.4s;
+  -webkit-animation-delay: 3s;
 }
 
-.service-subtitle{
-	font-family: robotoregular;
-	font-size: 1.25rem;
-	color:#ffffff;
-	margin-bottom: 25px;
+#team .careers-middle-block {
+  padding: 125px 0 60px;
+}
+
+#team .careers-middle-block .careers-step-detail .step-content h3 {
+  font-size: 1.3rem;
+}
+
+#team .careers-middle-block .careers-step-detail .step-content p {
+  margin: -14px;
+}
+
+.service-subtitle {
+  font-family: robotoregular;
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 25px;
 }
