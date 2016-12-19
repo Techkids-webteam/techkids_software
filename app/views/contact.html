@@ -166,14 +166,14 @@
                     <div class="col-xs-12 col-sm-6 col-md-6">
                       <span class="input">
    					  <span class="input__label--top">First Name *</span>
-                      <input class="input__field input__field--contact" type="text" name="First name *" id="First name *">
+                      <input class="input__field input__field--contact" type="text" name="First name *" id="First name *" required>
                       <span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
                       </span>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                       <span class="input">
 				      <span class="input__label--top">Last Name *</span>
-                      <input class="input__field input__field--contact" type="text" name="Last name *" id="Last name *">
+                      <input class="input__field input__field--contact" type="text" name="Last name *" id="Last name *" required>
                       <span class="input__label-content input__label-content--contact error-message" id="error-for-Name"></span>
                       </span>
                     </div>
@@ -182,7 +182,7 @@
                     <div class="form-group">
                       <span class="input">
 										<span class="input__label--top">Email address *</span>
-                      <input class="input__field input__field--contact" type="text" name="Email address *" id="Email address *">
+                      <input class="input__field input__field--contact" type="text" name="Email address *" id="Email address *" required>
                       <span class="input__label-content input__label-content--contact error-message" id="error-for-Email"></span>
                       </span>
                     </div>
@@ -194,31 +194,40 @@
                     <span class="input__label-content input__label-content--contact error-message" id="error-for-country"></span>
                     </span>
                   </div>
+
+                  <div class="col-xs-12">
+                    <span class="input">
+					<span class="input__label--top">Your country</span>
+                    <input class="input__field input__field--contact" type="text" name="Your country" id="country">
+                    <span class="input__label-content input__label-content--contact error-message" id="error-for-country"></span>
+                    </span>
+                  </div>
                   <div class="col-xs-12">
                     <div class="input">
                       <span class="input__label--top">Short description about your projects/ideas *</span>
-                      <textarea class="input__field input__field--contact" name="message" id="message"></textarea>
+                      <textarea class="input__field input__field--contact" name="message" id="message" required></textarea>
                     </div>
                   </div>
                 </div>
-                <button class="btn button-orange" type="submit" id="submit-button"><span id="submit-text">CONTACT NOW</span></button>
-                <h4 id="notification" class="notification"></h3>
+                <button class="button-orange" type="submit" id="submit-button"><span id="submit-text">CONTACT NOW</span></button>
+                <h3 id="notification" class="notification"></h3>
                 <div id="form-loader" class="uil-rolling-css">
-                  <div>
-                    <div></div>
-                    <div></div>
-                  </div>
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
                 </div>
-                <!--Left-->
               </div>
-              <!--Contact Box-->
-          </form>
-          </div>
+              <!--Left-->
+            </div>
+            <!--Contact Box-->
+        </form>
         </div>
-        <section class="home-block-row our-work-footer container-zindex-one" data-require="base/click-item">
-          <div class="our-works-footer__item home-block-item home-block-item__dark-bg">
-            <a title="Tell Us What You Need" href="#">
-              <span class="home-block-item__background">
+      </div>
+      <section class="home-block-row our-work-footer container-zindex-one" data-require="base/click-item">
+        <div class="our-works-footer__item home-block-item home-block-item__dark-bg">
+          <a title="Tell Us What You Need" href="/portfolio">
+            <span class="home-block-item__background">
                 <picture>
                     <source media="(min-width: 75rem)" srcset="../images/our-work-bg.jpg">
                     <!-- <source media="(min-width: 62rem)" srcset="/globalassets/teaser/footer-left.jpg?preset=1300">
@@ -226,20 +235,20 @@
                     <img class="home-block-item__background" src="../images/our-work-bg.jpg" alt="Our Portfolio">
                 </picture>
             </span>
-              <span class="home-block-item__content-container">
+            <span class="home-block-item__content-container">
             <span class="home-block-item__content">
                 <span class="home-block-item__big-text">See our portfolio</span>
-              <span class="home-block-item__big-text">Meet our happy partners</span>
-              </span>
-              <!-- <span class="home-block-item__content-second">
+            <span class="home-block-item__big-text">Meet our happy partners</span>
+            </span>
+            <!-- <span class="home-block-item__content-second">
                 <p>We have offices in 4 countries, across 3 continents. One of them is close to you.</p>
             </span> -->
-              </span>
-            </a>
-          </div>
-          <div class="our-works-footer__item home-block-item home-block-item__bright-bg">
-            <a title="See our full list of skills" href="#">
-              <span class="home-block-item__background">
+            </span>
+          </a>
+        </div>
+        <div class="our-works-footer__item home-block-item home-block-item__bright-bg">
+          <a title="See our full list of skills" href="/service">
+            <span class="home-block-item__background">
                 <picture>
                     <source media="(min-width: 75rem)" srcset="../images/engagement-bg.jpg">
                     <!-- <source media="(min-width: 62rem)" srcset="/globalassets/teaser/footer-right.jpg?preset=1300">
@@ -247,43 +256,43 @@
                     <img class="home-block-item__background" src="../images/engagement-bg.jpg" alt="How can we help you">
                 </picture>
             </span>
-              <span class="home-block-item__content-container">
+            <span class="home-block-item__content-container">
             <span class="home-block-item__content">
                 <!-- <span class="home-block-item__small-text">See our portfolio</span> -->
-              <span class="home-block-item__big-text">How we can help you</span>
-              <span class="home-block-item__big-text">fast and effectively</span>
-              </span>
-              <!-- <span class="home-block-item__content-second">
+            <span class="home-block-item__big-text">How we can help you</span>
+            <span class="home-block-item__big-text">fast and effectively</span>
+            </span>
+            <!-- <span class="home-block-item__content-second">
                 <p>There are a total of 64 technologies in our skill set</p>
             </span> -->
-              </span>
-            </a>
-          </div>
-        </section>
-      </div>
-      <!-- menus script -->
-      <script src="scripts/menu.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="scripts/script.js"></script>
-      <script src='https://www.google.com/recaptcha/api.js'></script>
-      <script type="text/javascript" src="scripts/form.js"></script>
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-      <script>
-        (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-78355215-1', 'auto');
-        ga('send', 'pageview');
-      </script>
-      <!-- Built with love using Web Starter Kit -->
+            </span>
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- menus script -->
+    <script src="scripts/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="scripts/form.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-78355215-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
 </body>
 
 </html>
