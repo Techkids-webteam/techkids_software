@@ -41,6 +41,7 @@
   <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -48,117 +49,29 @@
 </head>
 <body>
 	<style>
-	/* -----------------------------------------------------------------------------
-
-  FONTS
-  
------------------------------------------------------------------------------ */
-@font-face {
-  font-family: 'Oxygen';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/oxygen/oxygen-v5-latin-300.eot");
-  src: local("Oxygen Light"), local("Oxygen-Light"), url("../fonts/oxygen/oxygen-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-300.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-300.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-300.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-300.svg#Oxygen") format("svg");
-}
-@font-face {
-  font-family: 'Oxygen';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oxygen/oxygen-v5-latin-regular.eot");
-  src: local("Oxygen"), local("Oxygen-Regular"), url("../fonts/oxygen/oxygen-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-regular.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-regular.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-regular.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-regular.svg#Oxygen") format("svg");
-}
-@font-face {
-  font-family: 'Oxygen';
-  font-style: normal;
+	.header__logo {
   font-weight: 700;
-  src: url("../fonts/oxygen/oxygen-v5-latin-700.eot");
-  src: local("Oxygen Bold"), local("Oxygen-Bold"), url("../fonts/oxygen/oxygen-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/oxygen/oxygen-v5-latin-700.woff2") format("woff2"), url("../fonts/oxygen/oxygen-v5-latin-700.woff") format("woff"), url("../fonts/oxygen/oxygen-v5-latin-700.ttf") format("truetype"), url("../fonts/oxygen/oxygen-v5-latin-700.svg#Oxygen") format("svg");
+  padding: 0 25px;
+  float: left;
 }
-/* -----------------------------------------------------------------------------
-
-  BOX SIZING RESET
-  
------------------------------------------------------------------------------ */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+	.header__icon {
+  position: relative;
+  display: block;
+  float: right;
+  width: 50px;
+  height: 66px;
+  cursor: pointer;
 }
-
-html {
-  box-sizing: border-box;
+.header__icon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: 0;
+  top: 16px;
+  left: 15px;
+  box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
 }
-
-/* -----------------------------------------------------------------------------
-
-  ROOT ELEMENTS
-  
------------------------------------------------------------------------------ */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  color: #6d6d6d;
-  background-color: #fff;
-  font-family: "Oxygen", Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-/* -----------------------------------------------------------------------------
-
-  HEADING ELEMENTS
-  
------------------------------------------------------------------------------ */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #3b3b3b;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-/* -----------------------------------------------------------------------------
-
-  TEXT ELEMENTS
-  
------------------------------------------------------------------------------ */
-a {
-  color: #28aadc;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00648c;
-}
-
-b,
-strong {
-  font-weight: 700;
-}
-
-i,
-em {
-  font-style: italic;
-}
-
-/* -----------------------------------------------------------------------------
-
-  MEDIA ELEMENTS
-  
------------------------------------------------------------------------------ */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* -----------------------------------------------------------------------------
 
   WRAPPER OBJECT
@@ -221,6 +134,70 @@ img {
   color: #fff;
   background-color: #3184a1;
 }
+
+
+.c-menu__items {
+  width: 300px;
+  list-style: none;
+  font-family: robotobold;
+  font-size: 1rem;
+  margin: 10px auto 0;
+  padding: 5px
+}
+
+@media only screen and (min-width:768px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 30px auto 0;
+    padding: 15px
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 40px auto 0;
+    padding: 15px
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .c-menu__items {
+    font-size: 1.25rem;
+    margin: 40px auto 0;
+    padding: 0
+  }
+}
+
+@media only screen and (min-width:1900px) {
+  .c-menu__items {
+    font-size: 1.375rem;
+    margin: 70px auto 0;
+    padding: 0
+  }
+}
+
+.c-menu__items li {
+  transition: .25s ease;
+}
+
+.c-menu__items li:hover {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+@media only screen and (min-width:1200px) {
+  .c-menu__items li:hover {
+    padding-left: 10px
+  }
+}
+
+@media only screen and (min-width:1900px) {
+  .c-menu__items li:hover {
+    padding-left: 20px
+  }
+}
+
 
 .o-header__title {
   margin: 24px;
@@ -484,7 +461,7 @@ body.has-active-menu {
  */
 .c-menu__close {
   color: #fff;
-  background-color: #3184a1;
+  background-color: #525252;
   font-size: 14px;
   border: none;
   box-shadow: none;
@@ -531,9 +508,10 @@ body.has-active-menu {
   BUTTONS
   
 ----------------------------------------------------------------------------- */
-.c-buttons {
+.c-header {
   margin-bottom: 0;
   text-align: center;
+  width: 97%;
 }
 
 .c-button {
@@ -621,8 +599,11 @@ body.has-active-menu {
 
   <header class="o-header" style="position: fixed; top: 0; left: 0; right: 0px; z-index: 10000;">
     <nav class="o-header-nav">
-      <div class="c-buttons">
-        <div id="c-button--push-right" class="c-button">Push Right</div>
+      <div class="c-header">
+        
+	    <a id="c-button--push-right" href="#" class="header__icon" id="header__icon"></a>
+        <a href="#" class="header__logo">Logo</a>
+
       </div>
 	  
     </nav>
@@ -637,13 +618,17 @@ body.has-active-menu {
 
 
 <nav id="c-menu--push-right" class="c-menu c-menu--push-right">
-  <button class="c-menu__close">Close Menu &rarr;</button>
+  <button class="c-menu__close"><i class="material-icons ">&#xE5CD;</i></button>
   <ul class="c-menu__items">
-    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
-    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
-    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
-    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
-    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+    <li class="c-menu__item"><a href="/service" class="c-menu__link">Our Services</a></li>
+    <li class="c-menu__item"><a href="/our-team" class="c-menu__link">Our Team</a></li>
+    <li class="c-menu__item"><a href="/portfolio" class="c-menu__link">Our Portfolio</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Our Working Process</a></li>
+	<li class="c-menu__item"><a href="#" class="c-menu__link">Our Happy Partners</a></li>
+	<li class="c-menu__item"><a href="#" class="c-menu__link">Our School</a></li>
+	<li class="c-menu__item"><a href="#" class="c-menu__link">Careers Opportunities</a></li>
+	<li class="c-menu__item"><a href="#" class="c-menu__link">Blog (Vietnamese Only)</a></li>
+    <li class="c-menu__item"><a href="/contact" class="c-menu__link">Contact Us</a></li>
   </ul>
 </nav><!-- /c-menu push-right -->
 
