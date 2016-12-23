@@ -2829,7 +2829,7 @@ a.view-more-jobs.clear, a.view-more-jobs.clear::after {
   width: 100%;
   font-style: italic;
   text-align: center;
-  padding: 4%
+  padding: 26px 60px;
 }
 
 .footer {
