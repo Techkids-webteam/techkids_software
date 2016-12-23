@@ -396,6 +396,7 @@ nav {
   width: 65px;
   height: 50px;
   outline: 0 none;
+  margin-right: 50px;
 }
 
 .portrait_demo_pic {
@@ -715,10 +716,7 @@ footer a:hover, footer a:focus {
 
 #team .careers-middle-block .careers-step-detail .step-content h3 {
   font-size: 1.3rem;
-}
-
-#team .careers-middle-block .careers-step-detail .step-content p {
-  margin: -14px;
+  height: 5px;
 }
 
 .service-subtitle {

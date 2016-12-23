@@ -3,7 +3,7 @@
     float: left;
     position: relative;
     top: 50%;
-    width: 17%;
+    width: 13%;
     margin: 40px 0 0 30px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -22,7 +22,8 @@
     width: 50%;
 }
 }
-	.header__icon {
+.header__icon {
+  margin-top: 8px;
   position: relative;
   display: block;
   float: right;

@@ -80,7 +80,7 @@
 	  dots: false,
 	  autoplay: true,
 	  infinite: false,
-	  speed: 300,
+	  speed: 100,
 	  slidesToShow: 6,
 	  responsive: [
 		{

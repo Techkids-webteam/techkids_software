@@ -2062,7 +2062,7 @@ div.ppt {
 
 @media only screen and (min-width:1200px) {
   .page-introduction-container .page-introduction-top-block__content {
-    top: 35%
+    top: 45%
   }
   .page-introduction-container .page-introduction-top-block__content h1 {
     font-size: 3.625rem;
@@ -8715,7 +8715,7 @@ textarea[name=message]:-ms-input-placeholder {
   }
   #team .careers-middle-block .careers-step-detail {
     margin-bottom: 0;
-    padding-bottom: 90px
+    padding-bottom: 0px
   }
 }
 
